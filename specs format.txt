@@ -1,0 +1,12 @@
+launch
+  body
+  display
+  os
+  camera (back)
+  camera (front)
+  battery
+  wireless connection : WLAN bluetooth gps 2g 3g etc
+  sound system
+  other features : color sensors messaging
+  price
+  

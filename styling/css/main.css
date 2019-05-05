@@ -1,0 +1,57 @@
+        /* General Styling */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ddd;
+}
+
+
+header{
+/* problem encountered with the url of the image... gonna fix it later */
+    background-image: url("C:/Users/user/Desktop/MyProject/images/phones.jpg");
+    height: 150px;
+    background-position-x: 40%;
+    background-position-y: 50%;
+}
+
+#cover-header{
+    z-index: -1;
+}
+#cover-text{
+    /* object-position: center; */
+    z-index: 1;
+    font-size: 35px;
+    width: 55%;
+    padding-bottom: 10px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 15px;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* for IE8 and earlier */
+}
+
+ul{
+    list-style-type: none;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+#cardImg{
+    max-width: 300px;
+    height: 320px;
+    clear: right;
+}
+
+.text-info, .text-primary{
+    cursor: pointer;
+}
+
+    /* Footer */
+footer a{
+    color: #fff;
+    padding: 5px;
+}
+footer a:hover{
+    color: #999;
+}
