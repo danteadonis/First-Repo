@@ -6,8 +6,7 @@ body{
 
 
 header{
-/* problem encountered with the url of the image... gonna fix it later */
-    background-image: url("C:/Users/user/Desktop/MyProject/images/phones.jpg");
+    background-image: url('../images/phones.jpg');
     height: 150px;
     background-position-x: 40%;
     background-position-y: 50%;
