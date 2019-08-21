@@ -35,14 +35,17 @@ ul{
 .card{
     border-radius: 10px;
 }
+.collapse{
+    padding: 3px;
+}
 
 #cardImg{
-    max-width: 300px;
-    height: 320px;
+    max-width: 400px;
+    height: 410px;
     clear: right;
 }
 
-.text-info, .text-primary{
+.text-secondary, .text-dark{
     cursor: pointer;
 }
 
