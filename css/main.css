@@ -4,7 +4,6 @@ body{
     background-color: #ddd;
 }
 
-
 header{
     background-image: url('../images/phones.jpg');
     height: 150px;
@@ -16,7 +15,6 @@ header{
     z-index: -1;
 }
 #cover-text{
-    /* object-position: center; */
     z-index: 1;
     font-size: 35px;
     width: 55%;
