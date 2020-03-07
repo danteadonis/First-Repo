@@ -2,16 +2,30 @@
 <html lang= "en">
     <head>
         <title>FlagshipWorld | Videos</title>
-        <meta charset= "UTF-8">
-        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
-        <meta name= "description" content= "Flagship Phone Specs">
-        <meta name= "viewport" content= "width:device-width, initial-scale=1.0">
-        <link rel= "icon" href= "#" type= "image/x-icon">
-        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css">
-        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel= "stylesheet" type= "text/css" href= "css/main.css">
-        <link rel= "stylesheet" type= "text/css" href= "css/responsive.css">
-        <base target= "_self">
+        <meta charset= "UTF-8"/>
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge"/>
+        <meta name= "description" content= "Flagship Smartphone Specs"/>
+        <meta name= "viewport" content= "width:device-width, initial-scale=1.0"/>
+        <link rel= "icon" href= "images/flagship.jpg" type= "image/x-icon"/>
+        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css"/>
+        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel= "stylesheet" type= "text/css" href= "css/main.css"/>
+        <link rel= "stylesheet" type= "text/css" href= "css/responsive.css"/>
+        <base target= "_self"/>
+        <script src= "js/jquery-3.3.1.min.js"></script>
+        <script src= "styling/bootstrap/popper.js"></script>
+        <script src= "styling/bootstrap/bootstrap.js"></script>
+        <script src= "styling/bootstrap/bootstrap.min.js"></script>
+        <script src= "js/myScript.js"></script>
+        <script>
+            $(function(){
+                $(".control").css("border-radius", "8px");
+                
+                $(".card-header").click(function(){
+                    $(".fa-plus", this).toggleClass("fa-minus");
+                });
+            });
+        </script>
     </head>
     <body>
         <div id= "cover-header">
@@ -53,191 +67,217 @@
                 </ul>
             </div>
         </nav>
-        <div class= "container">
-            <main>
-                <fieldset>
-                    <legend>
-                        <h1>Videos</h1>
-                    </legend>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro neque facere dolores, iure libero? Provident numquam quidem, voluptatem ut consequatur sit nisi, incidunt repellat exercitationem distinctio nihil, perferendis architecto! Facere aliquid non reiciendis a provident, harum, obcaecati nesciunt voluptatibus placeat at sit odio iste nisi minima veniam eos. Ipsum.
-                </fieldset>
-            </main>
-            <!-- begin review vidoes accordions -->
-            <!-- Apple accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">Apple</div></h4>
-                    </div>
-                    <div id= "appleCollapse" class= "collapse">
-                        <div class= "text-secondary my-2" href= "#appleReview" data-toggle= "collapse">
-                            <h6>Review Videos</h6>
-                        </div>
-                        <div id= "appleReview" class= "collapse">
-                            <!-- iPhone x video -->
-                            <div class= "card my-4 collapse" id= "appleReview">
-                                <div class= "card-header text-secondary" href= "#xCollapse" data-toggle= "collapse">iPhone X</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xCollapse">
-                                    <iframe src= "https://youtu.be/OvVKnC6gGtg" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+        <div class= "container-fluid">
+            <div class= "col-md-12">
+                <div class= "card">
+                    <div class= "card-body text-center">Ad</div>
+                </div>
+            </div>
+            <div class= "row content">
+                <div class= "col-sm-2 sidenav">
+                    <div id= "slider" class= "carousel slide" data-ride= "carousel">
+                        <div class= "card" id= "indexCarousel">
+                            <div class= "card-body">
+                                <div class= "carousel-inner" role= "listbox">
+                                    <div id= "carouText1" class= "carousel-item active"></div>
+                                    <div id= "carouText2" class= "carousel-item"></div>
+                                    <div id= "carouText3" class= "carousel-item"></div>
                                 </div>
                             </div>
-                            <!-- iPhone xr video -->
-                            <div class= "card mb-4 collapse" id= "appleReview">
-                                <div class= "card-header text-secondary" href= "#xrCollapse" data-toggle= "collapse">iPhone XR</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xrCollapse">
-                                    <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                            <div class= "card-footer text-center">
+                                <a href= "news.html" class= "btn btn-sm btn-outline-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <a href= "#slider" class= "carousel-control-prev" data-slide= "prev">
+                            <span class= "carousel-control-prev-icon bg-dark control"></span>
+                        </a>
+                        <a href= "#slider" class= "carousel-control-next" data-slide= "next">
+                            <span class= "carousel-control-next-icon bg-dark control"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class= "col-sm-8">
+                    <div id= "accordion" role= "tablist">
+                        <!-- Apple accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Apple<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "appleCollapse" class= "collapse">
+                                <div class= "text-secondary my-2" href= "#appleReview" data-toggle= "collapse">
+                                    <h6>Review Videos</h6>
+                                </div>
+                                <div id= "appleReview" class= "collapse">
+                                    <!-- iPhone x video -->
+                                    <div class= "card my-4 collapse" id= "appleReview">
+                                        <div class= "card-header text-secondary" href= "#xCollapse" data-toggle= "collapse">iPhone X</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xCollapse">
+                                            <iframe src= "https://youtu.be/OvVKnC6gGtg" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- iPhone xr video -->
+                                    <div class= "card mb-4 collapse" id= "appleReview">
+                                        <div class= "card-header text-secondary" href= "#xrCollapse" data-toggle= "collapse">iPhone XR</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xrCollapse">
+                                            <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id= "accordion" role= "tablist">
+                        <!-- Google accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#pixelCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Google<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "pixelCollapse" class= "collapse">
+                                <div class= "text-secondary my-2" href= "#pixelReview" data-toggle= "collapse">
+                                    <h6>Review Video</h6>
+                                </div>
+                                <div id= "pixelReview" class= "collapse">
+                                    <!-- Google pixel video -->
+                                    <div class= "card my-4 collapse" id= "pixelReview">
+                                        <div class= "card-header text-secondary" href= "#pixel3XCollapse" data-toggle= "collapse">Pixel 3 XL</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "pixel3XCollapse">
+                                            <iframe src= "https://youtu.be/nZ9UwPR2bF4" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id= "accordion" role= "tablist">
+                        <!-- Huawei accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Huawei<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "huaweiCollapse" class= "collapse">
+                                <div class= "text-secondary my-2" href= "#huaweiReview" data-toggle= "collapse">
+                                    <h6>Review Video</h6>
+                                </div>
+                                <div id= "huaweiReview" class= "collapse">
+                                    <!-- Huawei nova 5i pro video -->
+                                    <div class= "card my-4 collapse" id= "huaweiReview">
+                                        <div class= "card-header text-secondary" href= "#huwaiNovaCollapse" data-toggle= "collapse">Nova 5i Pro</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "huwaiNovaCollapse">
+                                            <iframe src= "https://youtu.be/ii2ccFCRNrA" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id= "accordion" role= "tablist">
+                        <!-- Samsung accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Samsung<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "samsungCollapse" class= "collapse">
+                                <div class= "text-secondary my-2" href= "#samsungReview" data-toggle= "collapse">
+                                    <h6>Review Videos</h6>
+                                </div>
+                                <div id= "samsungReview" class= "collapse">
+                                    <!-- Samsung galaxy s10 video -->
+                                    <div class= "card mb-4 collapse" id= "samsungReview">
+                                        <div class= "card-header text-secondary" href= "#s10Collapse" data-toggle= "collapse">Galaxy S10</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "s10Collapse">
+                                            <iframe src= "https://youtu.be/jxmxLPGNk8k" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- Samsung galaxy note video -->
+                                    <div class= "card mb-4 collapse" id= "samsungReview">
+                                        <div class= "card-header text-secondary" href= "#noteCollapse" data-toggle= "collapse">Galaxy Note 10</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "noteCollapse">
+                                            <iframe src= "https://youtu.be/NvyXsBIlYHw" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- Samsung galaxy fold video -->
+                                    <div class= "card mb-4 collapse" id= "samsungReview">
+                                            <div class= "card-header text-secondary" href= "#foldCollapse" data-toggle= "collapse">Galaxy Fold</div>
+                                            <div class= "embed-responsive embed-responsive-21by9 collapse" id= "foldCollapse">
+                                            <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id= "accordion" role= "tablist">
+                        <!-- Sony accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Sony<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "sonyCollapse" class="collapse">
+                                <div class= "text-secondary my-2" href= "#sonyReview" data-toggle= "collapse">
+                                    <h6>Review Video</h6>
+                                </div>
+                                <div id= "sonyReview" class= "collapse">
+                                    <!-- Sony xperia ace video -->
+                                    <div class= "card my-4 collapse" id= "sonyReview">
+                                        <div class= "card-header text-secondary" href= "#sonyAceCollapse" data-toggle= "collapse">Xperia Ace</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "sonyAceCollapse">
+                                            <iframe src= "https://youtu.be/D8Iga-cNElQ" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id= "accordion" role= "tablist">
+                        <!-- Xiaomi accordion -->
+                        <div class= "card my-2">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4><div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                    Xiaomi<span class= "fa fa-plus float-right"></span>
+                                </div></h4>
+                            </div>
+                            <div id= "xiaomiCollapse" class="collapse">
+                                <div class= "text-secondary my-2" href= "#xiaomiReview" data-toggle= "collapse">
+                                    <h6>Review Video</h6>
+                                </div>
+                                <div id= "xiaomiReview" class= "collapse">
+                                    <!-- Xiaomi mi 9 video -->
+                                    <div class= "card my-4 collapse" id= "xiaomiReview">
+                                        <div class= "card-header text-secondary" href= "#xiaomiM9Collapse" data-toggle= "collapse">Mi 9</div>
+                                        <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xiaomiM9Collapse">
+                                            <iframe src= "https://youtu.be/aDgf1nVOuJA" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Google accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#pixelCollapse" data-parent= "#accordion" data-toggle= "collapse">Google</div></h4>
+                <!-- end review vidoes accordions -->
+                <div class= "col-sm-2 sidenav">
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
-                    <div id= "pixelCollapse" class= "collapse">
-                        <div class= "text-secondary my-2" href= "#pixelReview" data-toggle= "collapse">
-                            <h6>Review Video</h6>
-                        </div>
-                        <div id= "pixelReview" class= "collapse">
-                            <!-- Google pixel video -->
-                            <div class= "card my-4 collapse" id= "pixelReview">
-                                <div class= "card-header text-secondary" href= "#pixel3XCollapse" data-toggle= "collapse">Pixel 3 XL</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "pixel3XCollapse">
-                                    <iframe src= "https://youtu.be/nZ9UwPR2bF4" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                        </div>
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
                 </div>
             </div>
-            <!-- Huawei accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">Huawei</div></h4>
-                    </div>
-                    <div id= "huaweiCollapse" class= "collapse">
-                        <div class= "text-secondary my-2" href= "#huaweiReview" data-toggle= "collapse">
-                            <h6>Review Video</h6>
-                        </div>
-                        <div id= "huaweiReview" class= "collapse">
-                            <!-- Huawei lorem video -->
-                            <div class= "card my-4 collapse" id= "huaweiReview">
-                                <div class= "card-header text-secondary" href= "#huwaiNovaCollapse" data-toggle= "collapse">Nova 5i Pro</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "huwaiNovaCollapse">
-                                    <iframe src= "https://youtu.be/ii2ccFCRNrA" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Samsung accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">Samsung</div></h4>
-                    </div>
-                    <div id= "samsungCollapse" class= "collapse">
-                        <div class= "text-secondary my-2" href= "#samsungReview" data-toggle= "collapse">
-                            <h6>Review Videos</h6>
-                        </div>
-                        <div id= "samsungReview" class= "collapse">
-                            <!-- Samsung galaxy s10 video -->
-                            <div class= "card mb-4 collapse" id= "samsungReview">
-                                <div class= "card-header text-secondary" href= "#s10Collapse" data-toggle= "collapse">Galaxy S10</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "s10Collapse">
-                                    <iframe src= "https://youtu.be/jxmxLPGNk8k" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                            <!-- Samsung galaxy note video -->
-                            <div class= "card mb-4 collapse" id= "samsungReview">
-                                <div class= "card-header text-secondary" href= "#noteCollapse" data-toggle= "collapse">Galaxy Note 10</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "noteCollapse">
-                                    <iframe src= "https://youtu.be/NvyXsBIlYHw" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                            <!-- Samsung galaxy fold video -->
-                            <div class= "card mb-4 collapse" id= "samsungReview">
-                                    <div class= "card-header text-secondary" href= "#foldCollapse" data-toggle= "collapse">Galaxy Fold</div>
-                                    <div class= "embed-responsive embed-responsive-21by9 collapse" id= "foldCollapse">
-                                    <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sony accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">Sony</div></h4>
-                    </div>
-                    <div id= "sonyCollapse" class="collapse">
-                        <div class= "text-secondary my-2" href= "#sonyReview" data-toggle= "collapse">
-                            <h6>Review Video</h6>
-                        </div>
-                        <div id= "sonyReview" class= "collapse">
-                            <!-- Sony lorem video -->
-                            <div class= "card my-4 collapse" id= "sonyReview">
-                                <div class= "card-header text-secondary" href= "#sonyAceCollapse" data-toggle= "collapse">Xperia Ace</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "sonyAceCollapse">
-                                    <iframe src= "https://youtu.be/D8Iga-cNElQ" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Xiaomi accordion -->
-            <div id= "accordion" role= "tablist">
-                <div class= "card my-2">
-                    <div class= "card-header" role= "tab" id= "heading">
-                        <h4><div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">Xiaomi</div></h4>
-                    </div>
-                    <div id= "xiaomiCollapse" class="collapse">
-                        <div class= "text-secondary my-2" href= "#xiaomiReview" data-toggle= "collapse">
-                            <h6>Review Video</h6>
-                        </div>
-                        <div id= "xiaomiReview" class= "collapse">
-                            <!-- Xiaomi lorem video -->
-                            <div class= "card my-4 collapse" id= "xiaomiReview">
-                                <div class= "card-header text-secondary" href= "#xiaomiM9Collapse" data-toggle= "collapse">Mi 9</div>
-                                <div class= "embed-responsive embed-responsive-21by9 collapse" id= "xiaomiM9Collapse">
-                                    <iframe src= "https://youtu.be/aDgf1nVOuJA" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end review vidoes accordions -->
-                <h1>Lorem Ipsum</h1>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam, laboriosam consequuntur sit ipsam inventore autem dolorum nesciunt reiciendis numquam facilis dolor molestiae aperiam et enim quod obcaecati, explicabo omnis!</p>
-                </article>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quas hic minus repellendus eius neque odit possimus pariatur quos omnis illo, provident voluptas nisi. Iusto reprehenderit ducimus reiciendis libero inventore commodi blanditiis beatae. Earum, iusto alias. Incidunt alias blanditiis necessitatibus doloremque numquam reprehenderit magnam. Provident sapiente distinctio ea doloremque recusandae.</p>
-                </article>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolores blanditiis dolorem fugiat sint ad itaque quaerat eveniet sapiente maxime.</p>
-                </article>
 		</div>
 		<footer class= "bg-dark d-flex">
 			<ul id= "footerList">
 				<li>
 					<a href= "index.html">Home</a>
-				</li>
-				<li>
-					<a href= "mailto:adegboye72@gmail.com">Email</a>
 				</li>
 				<li>
 					<a href= "http://gsmarena.com">Related</a>
@@ -256,21 +296,21 @@
 				<li>
 					<div class= "d-flex bg-inverse">
 						<div>
-							<a href= "http://twitter.com/danteadon1s">
+							<a href= "https://twitter.com/intent/tweet?screen_name=danteadonis">
 								<i class= "fa fa-twitter pr-lg-2" id= "fa-icons-tw"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://instagram.com/danteadonis">
+							<a href= "https://instagram.com/danteadonis">
 								<i class= "fa fa-instagram pr-lg-2"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://gmail.com/adegboye72">
+							<a href= "mailto:adegboye72@gmail.com">
 								<i class= "fa fa-envelope pr-lg-2"></i></a>
 							</div>
 						<div>
-							<a href= "http://facebook.com/danteadegboye">
+							<a href= "https://facebook.com/danteadegboye">
 								<i class= "fa fa-facebook pr-lg-2"></i>
 							</a>
 						</div>
@@ -283,9 +323,5 @@
 				</li>
 			</ul>
 		</footer>
-        <script src= "js/jquery-3.3.1.min.js"></script>
-        <script src= "styling/bootstrap/popper.js"></script>
-        <script src= "styling/bootstrap/bootstrap.js"></script>
-        <script src= "styling/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>

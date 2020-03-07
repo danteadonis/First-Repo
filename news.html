@@ -2,16 +2,21 @@
 <html lang= "en">
     <head>
         <title>FlagshipWorld | News</title>
-        <meta charset= "UTF-8">
-        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
-        <meta name= "description" content= "Flagship Phone Specs">
-        <meta name= "viewport" content= "width:device-width, initial-scale=1.0">
-        <link rel= "icon" href= "#" type= "image/x-icon">
-        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css">
-        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel= "stylesheet" href= "css/main.css">
-        <link rel= "stylesheet" href= "css/responsive.css">
-        <base target= "_self">
+        <meta charset= "UTF-8"/>
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge"/>
+        <meta name= "description" content= "Flagship Smartphone Specs"/>
+        <meta name= "viewport" content= "width:device-width, initial-scale=1.0"/>
+        <link rel= "icon" href= "images/flagship.jpg" type= "image/x-icon"/>
+        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css"/>
+        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel= "stylesheet" href= "css/main.css"/>
+        <link rel= "stylesheet" href= "css/responsive.css"/>
+        <base target= "_self"/>
+        <script src= "js/jquery-3.3.1.min.js"></script>
+        <script src= "styling/bootstrap/popper.js"></script>
+        <script src= "styling/bootstrap/bootstrap.js"></script>
+        <script src= "styling/bootstrap/bootstrap.min.js"></script>
+        <script src= "js/myScript.js"></script>
     </head>
     <body>
         <div id= "cover-header">
@@ -53,38 +58,45 @@
                 </ul>
             </div>
         </nav>
-        <div class= "container">
-            <main>
-                <fieldset>
-                    <legend>
-                        <h1>News</h1>
-                    </legend>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro neque facere dolores, iure libero? Provident numquam quidem, voluptatem ut consequatur sit nisi, incidunt repellat exercitationem distinctio nihil, perferendis architecto! Facere aliquid non reiciendis a provident, harum, obcaecati nesciunt voluptatibus placeat at sit odio iste nisi minima veniam eos. Ipsum.
-                </fieldset>
-            </main>
-            <section>
-                <h1>Lorem Ipsum</h1>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam, laboriosam consequuntur sit ipsam inventore autem dolorum nesciunt reiciendis numquam facilis dolor molestiae aperiam et enim quod obcaecati, explicabo omnis!</p>
-                </article>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quas hic minus repellendus eius neque odit possimus pariatur quos omnis illo, provident voluptas nisi. Iusto reprehenderit ducimus reiciendis libero inventore commodi blanditiis beatae. Earum, iusto alias. Incidunt alias blanditiis necessitatibus doloremque numquam reprehenderit magnam. Provident sapiente distinctio ea doloremque recusandae.</p>
-                </article>
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolores blanditiis dolorem fugiat sint ad itaque quaerat eveniet sapiente maxime.</p>
-                </article>
-            </section>
+        <div class= "container-fluid">
+            <div class= "row">
+                <div class= "col-md-12">
+                    <div class= "card">
+                        <div class= "card-body text-center mb-2">Ad</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class= "text-center">NEWS</h2>
+            <div class= "row content">
+                <div class= "col-sm-2 sidenav">
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <!-- apple iphone LOREM -->
+                        <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <!-- google pixel -->
+                        <iframe src= "https://youtu.be/nZ9UwPR2bF4" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ad</div>
+                    </div>
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <!-- samsung galaxy fold -->
+                        <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
+                </div>
+                <div id= "newsContent" class= "col-sm-8"><!-- added dynamically with js --></div>
+                <div class= "col-sm-2 sidenav">
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ad</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class= "bg-dark d-flex">
             <ul id= "footerList">
                 <li>
                     <a href= "index.html">Home</a>
-                </li>
-                <li>
-                    <a href= "mailto:adegboye72@gmail.com">Email</a>
                 </li>
                 <li>
                     <a href= "http://gsmarena.com">Related</a>
@@ -103,21 +115,21 @@
                 <li>
                     <div class= "d-flex bg-inverse">
                         <div>
-                            <a href= "http://twitter.com/danteadon1s">
+                            <a href= "https://twitter.com/intent/tweet?screen_name=danteadonis">
                                 <i class= "fa fa-twitter pr-lg-2" id= "fa-icons-tw"></i>
                             </a>
                         </div>
                         <div>
-                            <a href= "http://instagram.com/danteadonis">
+                            <a href= "https://instagram.com/danteadonis">
                                 <i class= "fa fa-instagram pr-lg-2"></i>
                             </a>
                         </div>
                         <div>
-                            <a href= "http://gmail.com/adegboye72">
+                            <a href= "mailto:adegboye72@gmail.com">
                                 <i class= "fa fa-envelope pr-lg-2"></i></a>
                             </div>
                         <div>
-                            <a href= "http://facebook.com/danteadegboye">
+                            <a href= "https://facebook.com/danteadegboye">
                                 <i class= "fa fa-facebook pr-lg-2"></i>
                             </a>
                         </div>
@@ -130,9 +142,5 @@
                 </li>
             </ul>
         </footer>
-        <script src= "js/jquery-3.3.1.min.js"></script>
-        <script src= "styling/bootstrap/popper.js"></script>
-        <script src= "styling/bootstrap/bootstrap.js"></script>
-        <script src= "styling/bnootstrap/bootstrap.min.js"></script>
     </body>
 </html>

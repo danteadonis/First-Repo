@@ -2,16 +2,26 @@
 <html lang= "en">
     <head>
         <title>FlagshipWorld | Images</title>
-        <meta charset= "UTF-8">
-        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
-        <meta name= "description" content= "Flagship Phone Specs">
-        <meta name= "viewport" content= "width:device-width, initial-scale=1.0">
-        <link rel= "icon" href= "#" type= "image/x-icon">
-        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css">
-        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel= "stylesheet" href= "css/main.css">
-        <link rel= "stylesheet" href= "css/responsive.css">
-        <base target= "_self">
+        <meta charset= "UTF-8"/>
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge"/>
+        <meta name= "description" content= "Flagship Smartphone Specs"/>
+        <meta name= "viewport" content= "width:device-width, initial-scale=1.0"/>
+        <link rel= "icon" href= "images/flagship.jpg" type= "image/x-icon"/>
+        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css"/>
+        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel= "stylesheet" href= "css/main.css"/>
+        <link rel= "stylesheet" href= "css/responsive.css"/>
+        <base target= "_self"/>
+        <script src= "js/jquery-3.3.1.min.js"></script>
+        <script src= "styling/bootstrap/popper.js"></script>
+        <script src= "styling/bootstrap/bootstrap.js"></script>
+        <script src= "styling/bootstrap/bootstrap.min.js"></script>
+        <script src= "js/myScript.js"></script>
+        <script>
+            $(function(){
+                $(".control").css("border-radius", "8px");
+            });
+        </script>
     </head>
     <body>
         <div id= "cover-header">
@@ -53,32 +63,202 @@
                 </ul>
             </div>
         </nav>
-        <div class= "container">
-            <div class= "row">
-                <!-- begin Apple photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">Apple</div></h4>
-                            </div>
-                            <div id= "appleCollapse" class= "collapse show">
-                                <div class= "text-secondary my-2" href= "#appleReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
+        <div class= "container-fluid">
+            <div class= "row content">
+                <div class= "col-sm-2 sidenav">
+                    <div id= "slider" class= "carousel slide" data-ride= "carousel">
+                        <div class= "card" id= "indexCarousel">
+                            <div class= "card-body">
+                                <div class= "carousel-inner" role= "listbox">
+                                    <div id= "carouText1" class= "carousel-item active"></div>
+                                    <div id= "carouText2" class= "carousel-item"></div>
+                                    <div id= "carouText3" class= "carousel-item"></div>
                                 </div>
-                                <div id= "appleReview" class= "collapse">
-                                    <!-- iPhone x images -->
-                                    <div class= "card my-4 collapse" id= "appleReview">
-                                        <div class= "card-header text-secondary" href= "#xCollapse" data-toggle= "collapse">iPhone X</div>
-                                        <div class= "card-body collapse" id= "xCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone x" class= "img-fluid">
+                            </div>
+                            <div class= "card-footer text-center">
+                                <a href= "news.html" class= "btn btn-sm btn-outline-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <a href= "#slider" class= "carousel-control-prev" data-slide= "prev">
+                            <span class= "carousel-control-prev-icon bg-dark control"></span>
+                        </a>
+                        <a href= "#slider" class= "carousel-control-next" data-slide= "next">
+                            <span class= "carousel-control-next-icon bg-dark control"></span>
+                        </a>
+                    </div>
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <!-- Samsung galaxy fold -->
+                        <iframe src= "https://youtu.be/MIPIMLZsuKU" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
+                </div>
+                <div class= "col-sm-8">
+                    <div class= "row">
+                        <!-- Apple photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">Apple</div></h4>
+                                    </div>
+                                    <div id= "appleCollapse" class= "collapse show">
+                                        <div class= "text-secondary my-2" href= "#appleReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "appleReview" class= "collapse">
+                                            <!-- iPhone x images -->
+                                            <div class= "card my-4 collapse" id= "appleReview">
+                                                <div class= "card-header text-secondary" href= "#xCollapse" data-toggle= "collapse">iPhone X</div>
+                                                <div class= "card-body collapse" id= "xCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone x" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                            <!-- iPhone xr images -->
+                                            <div class= "card mb-4 collapse" id= "appleReview">
+                                                <div class= "card-header text-secondary" href= "#xrCollapse" data-toggle= "collapse">iPhone XR</div>
+                                                <div class= "card-body collapse" id= "xrCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone xr" class= "img-fluid"/>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- iPhone xr images -->
-                                    <div class= "card mb-4 collapse" id= "appleReview">
-                                        <div class= "card-header text-secondary" href= "#xrCollapse" data-toggle= "collapse">iPhone XR</div>
-                                        <div class= "card-body collapse" id= "xrCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone xr" class= "img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Google photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#pixelCollapse" data-parent= "#accordion" data-toggle= "collapse">Google</div></h4>
+                                    </div>
+                                    <div id= "pixelCollapse" class= "collapse show">
+                                        <div class= "text-secondary my-2" href= "#pixelReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "pixelReview" class= "collapse">
+                                            <!-- Google pixel images -->
+                                            <div class= "card my-4 collapse" id= "pixelReview">
+                                                <div class= "card-header text-secondary" href= "#pixel3XCollapse" data-toggle= "collapse">Pixel 3 XL</div>
+                                                <div class= "card-body collapse" id= "pixel3XCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "google pixel 3 xl" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Huawei photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">Huawei</div></h4>
+                                    </div>
+                                    <div id= "huaweiCollapse" class= "collapse show">
+                                        <div class= "text-secondary my-2" href= "#huaweiReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "huaweiReview" class= "collapse">
+                                            <!-- Huawei images -->
+                                            <div class= "card my-4 collapse" id= "huaweiReview">
+                                                <div class= "card-header text-secondary" href= "#huwaiNovaCollapse" data-toggle= "collapse">Nova 5i Pro</div>
+                                                <div class= "card-body collapse" id= "huwaiNovaCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "huawei nova 5i pro" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ads -->
+                        <div class= "col-md-12">
+                            <div class= "card">
+                                <div class= "card-body text-center">Ad</div>
+                            </div>
+                        </div>
+                        <!-- Samsung photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">Samsung</div></h4>
+                                    </div>
+                                    <div id= "samsungCollapse" class= "collapse show">
+                                        <div class= "text-secondary my-2" href= "#samsungReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "samsungReview" class= "collapse">
+                                            <!-- Samsung galaxy s10 images -->
+                                            <div class= "card mb-4 collapse" id= "samsungReview">
+                                                <div class= "card-header text-secondary" href= "#s10Collapse" data-toggle= "collapse">Galaxy S10</div>
+                                                <div class= "card-body collapse" id= "s10Collapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy s10" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                            <!-- Samsung galaxy note images -->
+                                            <div class= "card mb-4 collapse" id= "samsungReview">
+                                                <div class= "card-header text-secondary" href= "#noteCollapse" data-toggle= "collapse">Galaxy Note 10</div>
+                                                <div class= "card-body collapse" id= "noteCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy note" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                            <!-- Samsung galaxy fold images -->
+                                            <div class= "card mb-4 collapse" id= "samsungReview">
+                                                <div class= "card-header text-secondary" href= "#foldCollapse" data-toggle= "collapse">Galaxy Fold</div>
+                                                <div class= "card-body collapse" id= "foldCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy fold" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sony photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">Sony</div></h4>
+                                    </div>
+                                    <div id= "sonyCollapse" class="collapse show">
+                                        <div class= "text-secondary my-2" href= "#sonyReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "sonyReview" class= "collapse">
+                                            <!-- Sony lorem images -->
+                                            <div class= "card my-4 collapse" id= "sonyReview">
+                                                <div class= "card-header text-secondary" href= "#sonyAceCollapse" data-toggle= "collapse">Xperia Ace</div>
+                                                <div class= "card-body collapse" id= "sonyAceCollapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "sony xperia ace" class= "img-fluid"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Xiaomi photos accordion -->
+                        <div class= "col-md-4">
+                            <div id= "accordion" role= "tablist">
+                                <div class= "card my-2">
+                                    <div class= "card-header" role= "tab" id= "heading">
+                                        <h4><div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">Xiaomi</div></h4>
+                                    </div>
+                                    <div id= "xiaomiCollapse" class="collapse show">
+                                        <div class= "text-secondary my-2" href= "#xiaomiReview" data-toggle= "collapse">
+                                            <h6>View Images</h6>
+                                        </div>
+                                        <div id= "xiaomiReview" class= "collapse">
+                                            <!-- Xiaomi lorem images -->
+                                            <div class= "card my-4 collapse" id= "xiaomiReview">
+                                                <div class= "card-header text-secondary" href= "#xiaomiM9Collapse" data-toggle= "collapse">Mi 9</div>
+                                                <div class= "card-body collapse" id= "xiaomiM9Collapse">
+                                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "xiaomi mi 9" class= "img-fluid"/>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -86,147 +266,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- begin Google photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#pixelCollapse" data-parent= "#accordion" data-toggle= "collapse">Google</div></h4>
-                            </div>
-                            <div id= "pixelCollapse" class= "collapse show">
-                                <div class= "text-secondary my-2" href= "#pixelReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
-                                </div>
-                                <div id= "pixelReview" class= "collapse">
-                                    <!-- Google pixel images -->
-                                    <div class= "card my-4 collapse" id= "pixelReview">
-                                        <div class= "card-header text-secondary" href= "#pixel3XCollapse" data-toggle= "collapse">Pixel 3 XL</div>
-                                        <div class= "card-body collapse" id= "pixel3XCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "google pixel lorem" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class= "col-sm-2 sidenav">
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
-                </div>
-                <!-- begin Huawei photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">Huawei</div></h4>
-                            </div>
-                            <div id= "huaweiCollapse" class= "collapse show">
-                                <div class= "text-secondary my-2" href= "#huaweiReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
-                                </div>
-                                <div id= "huaweiReview" class= "collapse">
-                                    <!-- Huawei lorem images -->
-                                    <div class= "card my-4 collapse" id= "huaweiReview">
-                                        <div class= "card-header text-secondary" href= "#huwaiNovaCollapse" data-toggle= "collapse">Nova 5i Pro</div>
-                                        <div class= "card-body collapse" id= "huwaiNovaCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "huawei lorem" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ads -->
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header text-center">
-                            <h4>Ads</h4>
-                        </div>
-                        <div class="card-body text-center">Advertise your brand here, get it out to the world!</div>
-                    </div>
-                </div>
-                <!-- begin Samsung photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">Samsung</div></h4>
-                            </div>
-                            <div id= "samsungCollapse" class= "collapse show">
-                                <div class= "text-secondary my-2" href= "#samsungReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
-                                </div>
-                                <div id= "samsungReview" class= "collapse">
-                                    <!-- Samsung galaxy s10 images -->
-                                    <div class= "card mb-4 collapse" id= "samsungReview">
-                                        <div class= "card-header text-secondary" href= "#s10Collapse" data-toggle= "collapse">Galaxy S10</div>
-                                        <div class= "card-body collapse" id= "s10Collapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy s10" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                    <!-- Samsung galaxy note images -->
-                                    <div class= "card mb-4 collapse" id= "samsungReview">
-                                        <div class= "card-header text-secondary" href= "#noteCollapse" data-toggle= "collapse">Galaxy Note 10</div>
-                                        <div class= "card-body collapse" id= "noteCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy note" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                    <!-- Samsung galaxy fold images -->
-                                    <div class= "card mb-4 collapse" id= "samsungReview">
-                                        <div class= "card-header text-secondary" href= "#foldCollapse" data-toggle= "collapse">Galaxy Fold</div>
-                                        <div class= "card-body collapse" id= "foldCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy fold" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- begin Sony photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">Sony</div></h4>
-                            </div>
-                            <div id= "sonyCollapse" class="collapse show">
-                                <div class= "text-secondary my-2" href= "#sonyReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
-                                </div>
-                                <div id= "sonyReview" class= "collapse">
-                                    <!-- Sony lorem images -->
-                                    <div class= "card my-4 collapse" id= "sonyReview">
-                                        <div class= "card-header text-secondary" href= "#sonyAceCollapse" data-toggle= "collapse">Xperia Ace</div>
-                                        <div class= "card-body collapse" id= "sonyAceCollapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "sony lorem" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- begin Xiaomi photos accordion -->
-                <div class= "col-md-4">
-                    <div id= "accordion" role= "tablist">
-                        <div class= "card my-2">
-                            <div class= "card-header" role= "tab" id= "heading">
-                                <h4><div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">Xiaomi</div></h4>
-                            </div>
-                            <div id= "xiaomiCollapse" class="collapse show">
-                                <div class= "text-secondary my-2" href= "#xiaomiReview" data-toggle= "collapse">
-                                    <h6>View Images</h6>
-                                </div>
-                                <div id= "xiaomiReview" class= "collapse">
-                                    <!-- Xiaomi lorem images -->
-                                    <div class= "card my-4 collapse" id= "xiaomiReview">
-                                        <div class= "card-header text-secondary" href= "#xiaomiM9Collapse" data-toggle= "collapse">Mi 9</div>
-                                        <div class= "card-body collapse" id= "xiaomiM9Collapse">
-                                            <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "xiaomi lorem" class= "img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
                 </div>
             </div>
@@ -235,9 +280,6 @@
             <ul id= "footerList">
                 <li>
                     <a href= "index.html">Home</a>
-                </li>
-                <li>
-                    <a href= "mailto:adegboye72@gmail.com">Email</a>
                 </li>
                 <li>
                     <a href= "http://gsmarena.com">Related</a>
@@ -256,21 +298,21 @@
                 <li>
                     <div class= "d-flex bg-inverse">
                         <div>
-                            <a href= "http://twitter.com/danteadon1s">
+                            <a href= "https://twitter.com/intent/tweet?screen_name=danteadonis">
                                 <i class= "fa fa-twitter pr-lg-2" id= "fa-icons-tw"></i>
                             </a>
                         </div>
                         <div>
-                            <a href= "http://instagram.com/danteadonis">
+                            <a href= "https://instagram.com/danteadonis">
                                 <i class= "fa fa-instagram pr-lg-2"></i>
                             </a>
                         </div>
                         <div>
-                            <a href= "http://gmail.com/adegboye72">
+                            <a href= "mailto:adegboye72@gmail.com">
                                 <i class= "fa fa-envelope pr-lg-2"></i></a>
                             </div>
                         <div>
-                            <a href= "http://facebook.com/danteadegboye">
+                            <a href= "https://facebook.com/danteadegboye">
                                 <i class= "fa fa-facebook pr-lg-2"></i>
                             </a>
                         </div>
@@ -283,9 +325,5 @@
                 </li>
             </ul>
         </footer>
-        <script src= "js/jquery-3.3.1.min.js"></script>
-        <script src= "styling/bootstrap/popper.js"></script>
-        <script src= "styling/bootstrap/bootstrap.js"></script>
-        <script src= "styling/bnootstrap/bootstrap.min.js"></script>
     </body>
 </html>

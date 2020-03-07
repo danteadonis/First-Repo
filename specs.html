@@ -2,16 +2,30 @@
 <html lang= "en">
     <head>
         <title>FlagshipWorld | Specs</title>
-        <meta charset= "UTF-8">
-        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
-        <meta name= "description" content= "Flagship Phone Specs">
-        <meta name= "viewport" content= "width:device-width, initial-scale=1.0">
-        <link rel= "icon" href= "#" type= "image/x-icon">
-        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css">
-        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel= "stylesheet" href= "css/main.css">
-        <link rel= "stylesheet" href= "css/responsive.css">
-        <base target= "_self">
+        <meta charset= "UTF-8"/>
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge"/>
+        <meta name= "description" content= "Flagship Smartphone Specs"/>
+        <meta name= "viewport" content= "width:device-width, initial-scale=1.0"/>
+        <link rel= "icon" href= "images/flagship.jpg" type= "image/x-icon"/>
+        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css"/>
+        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel= "stylesheet" href= "css/main.css"/>
+        <link rel= "stylesheet" href= "css/responsive.css"/>
+        <base target= "_self"/>
+        <script src= "js/jquery-3.3.1.min.js"></script>
+        <script src= "styling/bootstrap/popper.js"></script>
+        <script src= "styling/bootstrap/bootstrap.js"></script>
+        <script src= "styling/bootstrap/bootstrap.min.js"></script>
+        <script src= "js/myScript.js"></script>
+        <script>
+            $(function(){
+                $(".control").css("border-radius", "8px");
+
+                $(".card-header").click(function(){
+                    $(".fa-plus", this).toggleClass("fa-minus");
+                });
+            });
+        </script>
     </head>
     <body>
         <div id= "cover-header">
@@ -53,737 +67,1008 @@
                 </ul>
             </div>
         </nav>
-        <div class= "container">
-            <main>
-                <div>
-                    <h1>Specs</h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro neque facere dolores, iure libero? Provident numquam quidem, voluptatem ut consequatur sit nisi, incidunt repellat exercitationem distinctio nihil, perferendis architecto! Facere aliquid non reiciendis a provident, harum, obcaecati nesciunt voluptatibus placeat at sit odio iste nisi minima veniam eos. Ipsum.
+        <div class= "container-fluid">
+            <h1 class= "text-center">Specs</h1>
+            <div class= "lead text-center">Detailed rundown of each phone.</div>
+            <div class= "row content">
+                <div class= "col-sm-2 sidenav">
+                    <div id= "slider" class= "carousel slide" data-ride= "carousel">
+                        <div class= "card" id= "indexCarousel">
+                            <div class= "card-body">
+                                <div class= "carousel-inner" role= "listbox">
+                                    <div id= "carouText1" class= "carousel-item active"></div>
+                                    <div id= "carouText2" class= "carousel-item"></div>
+                                    <div id= "carouText3" class= "carousel-item"></div>
+                                </div>
+                            </div>
+                            <div class= "card-footer text-center">
+                                <a href= "news.html" class= "btn btn-sm btn-outline-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <a href= "#slider" class= "carousel-control-prev" data-slide= "prev">
+                            <span class= "carousel-control-prev-icon bg-dark control"></span>
+                        </a>
+                        <a href= "#slider" class= "carousel-control-next" data-slide= "next">
+                            <span class= "carousel-control-next-icon bg-dark control"></span>
+                        </a>
+                    </div>
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <!-- GOOGLE PIXEL 4 XL VIDEO SHOULD BE EMBEDED HERE -->
+                        <iframe src= "https://youtu.be/nZ9UwPR2bF4" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
                 </div>
-            </main>
-            <section>
-                <!-- Apple iPhone specs -->
-                <!-- iPhone x specs -->
-                <div id= "accordion" role= "tablist">
+                <div class= "col-sm-8">
+                    <!-- Apple iPhone specs -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Apple<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id= "appleCollapse" class= "collapse">
+                                <!-- iPhone 11 specs -->
+                                <div class= "text-dark" href= "#i11Collapse" data-toggle= "collapse">
+                                    <h6>iPhone 11 & 11 Pro</h6>
+                                </div>
+                                <div id= "i11Collapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone 11" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                                <hr>
+                                <!-- iPhone x specs -->
+                                <div class= "text-dark" href= "#xCollapse" data-toggle= "collapse">
+                                    <h6>iPhone X</h6>
+                                </div>
+                                <div id= "xCollapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone x" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                                <hr>
+                                <!-- iPhone xr specs -->
+                                <div class= "text-dark" href= "#xrCollapse" data-toggle= "collapse">
+                                    <h6>iPhone XR</h6>
+                                </div>
+                                <div id= "xrCollapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone xr" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Google Pixel specs -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#googleCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Google<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id= "googleCollapse" class= "collapse">
+                                <div class= "text-dark" href= "#pixel3Collapse" data-toggle= "collapse">
+                                    <h6>Pixel 3 XL</h6>
+                                </div>
+                                <div id= "pixel3Collapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "google pixel" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                                <hr/>
+                                <!-- pixel 4 xl -->
+                                <div class= "text-dark" href= "#pixel4Collapse" data-toggle= "collapse">
+                                    <h6>Pixel 4 XL</h6>
+                                </div>
+                                <div id= "pixel4Collapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "google pixel" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Huawei specs -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Huawei<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id= "huaweiCollapse" class= "collapse">
+                                <div class= "text-dark" href= "#huaweiNovaCollapse" data-toggle= "collapse">
+                                    <h6>Nova 5i Pro</h6>
+                                </div>
+                                <div id= "huaweiNovaCollapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "huawei" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- in-between ads section -->
+                    <div class= "col-md-12">
+                        <div class= "card">
+                            <div class= "card-body text-center">Ads</div>
+                        </div>
+                    </div>
+                    <!-- Samsung specs accordion -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Samsung<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <!-- galaxy s10 specs -->
+                            <div id= "samsungCollapse" class= "collapse">
+                                <div class= "text-dark" href= "#s10Collapse" data-toggle= "collapse">
+                                    <h6>Galaxy S10</h6>
+                                </div>
+                                <div id= "s10Collapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy s10" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                                <hr>
+                                <!-- galaxy note specs -->
+                                <div id= "samsungCollapse" class= "collapse">
+                                    <div class= "text-dark" href= "#noteCollapse" data-toggle= "collapse">
+                                        <h6>Galaxy Note 10</h6>
+                                    </div>
+                                    <div id= "noteCollapse" class= "collapse">
+                                        <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy note 10" class= "card-img-top img-fluid" id= "cardImg">
+                                        <br>
+                                        <dl>
+                                            <dt><u>Launch</u></dt>
+                                                <dd>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Body</u></dt>
+                                                <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Display</u></dt>
+                                                <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                                <hr>
+                                            <dt><u>OS</u></dt>
+                                                <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                                <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Camera (Back)</u></dt>
+                                                <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Camera (Front)</u></dt>
+                                                <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Battery</u></dt>
+                                                <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Wireless Connections</u></dt>
+                                                <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Edge: </b>lorem</dd>
+                                                <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>NFC: </b>lorem</dd>
+                                                <dd><b>Radio: </b>lorem</dd>
+                                                <hr>
+                                            <dt><u>Sound System</u></dt>
+                                                <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>3.5mm Jack: </b>lorem</dd>
+                                                <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Other Features</u></dt>
+                                                <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                                <hr>
+                                            <dt>Price: </dt>
+                                                <dd>Lorem, ipsum dolor.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- galaxy fold specs -->
+                                <div id= "samsungCollapse" class= "collapse">
+                                    <div class= "text-dark" href= "#foldCollapse" data-toggle= "collapse">
+                                        <h6>Galaxy Fold</h6>
+                                    </div>
+                                    <div id= "foldCollapse" class= "collapse">
+                                        <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy fold" class= "card-img-top img-fluid" id= "cardImg">
+                                        <br>
+                                        <dl>
+                                            <dt><u>Launch</u></dt>
+                                                <dd>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Body</u></dt>
+                                                <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Display</u></dt>
+                                                <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                                <hr>
+                                            <dt><u>OS</u></dt>
+                                                <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                                <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Camera (Back)</u></dt>
+                                                <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Camera (Front)</u></dt>
+                                                <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <hr>
+                                            <dt><u>Battery</u></dt>
+                                                <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                                <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Wireless Connections</u></dt>
+                                                <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Edge: </b>lorem</dd>
+                                                <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>NFC: </b>lorem</dd>
+                                                <dd><b>Radio: </b>lorem</dd>
+                                                <hr>
+                                            <dt><u>Sound System</u></dt>
+                                                <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>3.5mm Jack: </b>lorem</dd>
+                                                <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                                <hr>
+                                            <dt><u>Other Features</u></dt>
+                                                <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                                <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                                <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                                <hr>
+                                            <dt>Price: </dt>
+                                                <dd>Lorem, ipsum dolor.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sony specs -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Sony<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id= "sonyCollapse" class= "collapse">
+                                <div class= "text-dark" href= "#sonyAceCollapse" data-toggle= "collapse">
+                                    <h6>Xperia Ace</h6>
+                                </div>
+                                <div id= "sonyAceCollapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "sony xperia ace" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Xioami specs -->
+                    <div id= "accordion" role= "tablist">
+                        <div class= "card">
+                            <div class= "card-header" role= "tab" id= "heading">
+                                <h4>
+                                    <div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">
+                                        Xiaomi<span class= "fa fa-plus float-right"></span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id= "xiaomiCollapse" class= "collapse">
+                                <div class= "text-dark" href= "#xiaomiM9Collapse" data-toggle= "collapse">
+                                    <h6>Mi 9</h6>
+                                </div>
+                                <div id= "xiaomiM9Collapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "xiaomi mi 9" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                                <hr/>
+                                <!-- xiaomi mi mix alpha specs -->
+                                <div class= "text-dark" href= "#xiaomiMiMixAlphaCollapse" data-toggle= "collapse">
+                                    <h6>Mi Mix Alpha</h6>
+                                </div>
+                                <div id= "xiaomiMiMixAlphaCollapse" class= "collapse">
+                                    <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "xiaomi mi 9" class= "card-img-top img-fluid" id= "cardImg">
+                                    <br>
+                                    <dl>
+                                        <dt><u>Launch</u></dt>
+                                            <dd>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Body</u></dt>
+                                            <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Display</u></dt>
+                                            <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt><u>OS</u></dt>
+                                            <dd><b>Version: </b>Lorem, ipsum.</dd>
+                                            <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Back)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Camera (Front)</u></dt>
+                                            <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <hr>
+                                        <dt><u>Battery</u></dt>
+                                            <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
+                                            <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Wireless Connections</u></dt>
+                                            <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Edge: </b>lorem</dd>
+                                            <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>NFC: </b>lorem</dd>
+                                            <dd><b>Radio: </b>lorem</dd>
+                                            <hr>
+                                        <dt><u>Sound System</u></dt>
+                                            <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>3.5mm Jack: </b>lorem</dd>
+                                            <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
+                                            <hr>
+                                        <dt><u>Other Features</u></dt>
+                                            <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
+                                            <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
+                                            <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
+                                            <hr>
+                                        <dt>Price: </dt>
+                                            <dd>Lorem, ipsum dolor.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-sm-2 sidenav">
                     <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#appleCollapse" data-parent= "#accordion" data-toggle= "collapse">Apple</div></h4>
-                        </div>
-                        <div id= "appleCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#xCollapse" data-toggle= "collapse">
-                                <h6>iPhone X</h6>
-                            </div>
-                            <div id= "xCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone x" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                            <hr>
-                            <!-- iPhone xr specs -->
-                            <div class= "text-dark" href= "#xrCollapse" data-toggle= "collapse">
-                                <h6>iPhone XR</h6>
-                            </div>
-                            <div id= "xrCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "iphone xr" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
-                </div>
-                <!-- Google Pixel specs -->
-                <div id= "accordion" role= "tablist">
                     <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#googleCollapse" data-parent= "#accordion" data-toggle= "collapse">Google</div></h4>
-                        </div>
-                        <div id= "googleCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#pixelCollapse" data-toggle= "collapse">
-                                <h6>Pixel 3 XL</h6>
-                            </div>
-                            <div id= "pixelCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "google pixel" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
+                        <div class= "sideCard card-body text-center">Ads</div>
                     </div>
                 </div>
-                <!-- Huawei specs -->
-                <div id= "accordion" role= "tablist">
-                    <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#huaweiCollapse" data-parent= "#accordion" data-toggle= "collapse">Huawei</div></h4>
-                        </div>
-                        <div id= "huaweiCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#huaweiNovaCollapse" data-toggle= "collapse">
-                                <h6>Nova 5i Pro</h6>
-                            </div>
-                            <div id= "huaweiNovaCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "huawei" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ads section -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Ads</h4>
-                            </div>
-                            <p class= "card-text p-2">Advertise your brand here, get it out to the world!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Samsung specs accordion -->
-                <div id= "accordion" role= "tablist">
-                    <!-- galaxy s10 specs -->
-                    <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#samsungCollapse" data-parent= "#accordion" data-toggle= "collapse">Samsung</div></h4>
-                        </div>
-                        <div id= "samsungCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#s10Collapse" data-toggle= "collapse">
-                                <h6>Galaxy S10</h6>
-                            </div>
-                            <div id= "s10Collapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy s10" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                            <hr>
-                        </div>
-                        <!-- galaxy note specs -->
-                        <div id= "samsungCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#noteCollapse" data-toggle= "collapse">
-                                <h6>Galaxy Note 10</h6>
-                            </div>
-                            <div id= "noteCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy note 10" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                            <hr>
-                        </div>
-                        <div id= "samsungCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#foldCollapse" data-toggle= "collapse">
-                                <h6>Galaxy Fold</h6>
-                            </div>
-                            <div id= "foldCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "samsung galaxy fold" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Sony specs -->
-                <div id= "accordion" role= "tablist">
-                    <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#sonyCollapse" data-parent= "#accordion" data-toggle= "collapse">Sony</div></h4>
-                        </div>
-                        <div id= "sonyCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#sonyAceCollapse" data-toggle= "collapse">
-                                <h6>Xperia Ace</h6>
-                            </div>
-                            <div id= "sonyAceCollapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "sony xperia ace" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Xioami specs -->
-                <div id= "accordion" role= "tablist">
-                    <div class= "card">
-                        <div class= "card-header" role= "tab" id= "heading">
-                            <h4><div class= "text-secondary" href= "#xiaomiCollapse" data-parent= "#accordion" data-toggle= "collapse">Xiaomi</div></h4>
-                        </div>
-                        <div id= "xiaomiCollapse" class= "collapse">
-                            <div class= "text-dark" href= "#xiaomiM9Collapse" data-toggle= "collapse">
-                                <h6>Mi 9</h6>
-                            </div>
-                            <div id= "xiaomiM9Collapse" class= "collapse">
-                                <img src= "images/DPt9x_MUMAELuYx.jpg" alt= "xiaomi mi 9" class= "card-img-top img-fluid" id= "cardImg">
-                                <br>
-                                <dl>
-                                    <dt><u>Launch</u></dt>
-                                        <dd>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Body</u></dt>
-                                        <dd><b>Dimensions: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>SIM Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Weight: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Protection: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>USB: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Display</u></dt>
-                                        <dd><b>Size: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt><u>OS</u></dt>
-                                        <dd><b>Version: </b>Lorem, ipsum.</dd>
-                                        <dd><b>Chip: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>CPU: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>GPU: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Back)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Features: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Camera (Front)</u></dt>
-                                        <dd><b>Single Camera: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Features: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Video: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <hr>
-                                    <dt><u>Battery</u></dt>
-                                        <dd><b>Type: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Charging: </b>Lorem ipsum dolor sit.</dd>
-                                        <dd><b>Talk Time: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Music Time: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Wireless Connections</u></dt>
-                                        <dd><b>WLAN: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Bluetooth: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPS: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Edge: </b>lorem</dd>
-                                        <dd><b>2G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>3G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>4G Bands: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Internet Speeds (Max): </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>GPRS: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>NFC: </b>lorem</dd>
-                                        <dd><b>Radio: </b>lorem</dd>
-                                        <hr>
-                                    <dt><u>Sound System</u></dt>
-                                        <dd><b>Speakers: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>3.5mm Jack: </b>lorem</dd>
-                                        <dd><b>Mic: </b>Lorem, ipsum dolor.</dd>
-                                        <hr>
-                                    <dt><u>Other Features</u></dt>
-                                        <dd><b>Colors: </b>Lorem, ipsum dolor.</dd>
-                                        <dd><b>Sensors: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Default Browser: </b>Lorem ipsum dolor sit amet.</dd>
-                                        <dd><b>Messaging: </b>Lorem ipsum dolor sit.</dd>
-                                        <hr>
-                                    <dt>Price: </dt>
-                                        <dd>Lorem, ipsum dolor.</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <p>Visit the <a href= "images.html">Images</a> page in our gallery to see all <strong>HD</strong> images.</p>
+            </div>
+            <p class= "text-center">Visit the <a href= "images.html">Images</a> page in our gallery to see all <strong>HD</strong> images.</p>
         </div>
         <!-- end of main article -->
         <!-- begin footer -->
@@ -791,9 +1076,6 @@
 			<ul id= "footerList">
 				<li>
 					<a href= "index.html">Home</a>
-				</li>
-				<li>
-					<a href= "mailto:adegboye72@gmail.com">Email</a>
 				</li>
 				<li>
 					<a href= "http://gsmarena.com">Related</a>
@@ -812,21 +1094,21 @@
 				<li>
 					<div class= "d-flex bg-inverse">
 						<div>
-							<a href= "http://twitter.com/danteadon1s">
+							<a href= "https://twitter.com/intent/tweet?screen_name=danteadonis">
 								<i class= "fa fa-twitter pr-lg-2" id= "fa-icons-tw"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://instagram.com/danteadonis">
+							<a href= "https://instagram.com/danteadonis">
 								<i class= "fa fa-instagram pr-lg-2"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://gmail.com/adegboye72">
+							<a href= "mailto:adegboye72@gmail.com">
 								<i class= "fa fa-envelope pr-lg-2"></i></a>
 							</div>
 						<div>
-							<a href= "http://facebook.com/danteadegboye">
+							<a href= "https://facebook.com/danteadegboye">
 								<i class= "fa fa-facebook pr-lg-2"></i>
 							</a>
 						</div>
@@ -839,9 +1121,5 @@
 				</li>
 			</ul>
 		</footer>
-        <script src= "js/jquery-3.3.1.min.js"></script>
-        <script src= "styling/bootstrap/popper.js"></script>
-        <script src= "styling/bootstrap/bootstrap.js"></script>
-        <script src= "styling/bnootstrap/bootstrap.min.js"></script>
     </body>
 </html>

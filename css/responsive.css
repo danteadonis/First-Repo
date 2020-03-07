@@ -1,6 +1,20 @@
-
-    /* adjusts the space between the social icons in the footer */
 @media screen and (max-width: 768px){
+    .row.content{height: auto;}
+
+    .sidenav{
+        height: auto;
+        padding: 15px;
+    }
+
+    #indexCarousel{
+        height: 180px;
+    }
+
+    .newsImg{
+        width: 120px;
+        height: 80px;
+    }
+
     footer ul li .fa{
         padding: 7px;
     }
@@ -10,8 +24,12 @@
     }
 }
 
-    /* changes the orientation of the list items in the footer for tablets and bigger devices */
+    /* change the orientation of the list items in the footer for tablets and bigger devices */
 @media screen and (min-width: 768px){
+    #indexCarousel{
+        height: 200px;
+    }
+
     #footerList{
         display: inline-flex;
     }
@@ -20,7 +38,7 @@
     }
 }
 
-    /* resizes the text in the header for tablets and devices wider than 425 pixels but not more than 768 pixels */
+    /* resize the text in the header for tablets and devices wider than 425 pixels but not more than 768 pixels */
 @media screen and (max-width: 768px),(min-width: 425px){
     h5#cover-text{
         font-size: 20px;
@@ -31,7 +49,7 @@
     }
 }
 
-    /* resizes the text in the header for mobile devices smaller than 425 pixels */
+    /* resize the text in the header for mobile devices smaller than 425 pixels */
 @media screen and (max-width: 425px){
     h5#cover-text{
         font-size: 15px;
@@ -42,7 +60,7 @@
     }
 }
 
-    /* resizes the text in the header for larger screens and 4K screens */
+    /* resize the text in the header for larger screens and 4K screens */
 @media screen and (min-width: 1440px){
     h5#cover-text{
         font-size: 30px;
@@ -55,7 +73,7 @@
     }
 }
 
-    /* adds a bit of spacing between each card item on mobile devices */
+    /* add spacing between each card item on mobile devices */
 @media screen and (max-width:425px){
     .card{
         margin-bottom: 7px;

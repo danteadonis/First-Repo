@@ -1,17 +1,27 @@
 <!DOCTYPE html:5>
 <html lang= "en">
     <head>
-        <title>FlagshipWorld</title>
-        <meta charset= "UTF-8">
-        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
-        <meta name= "description" content= "Flagship Phone Specs">
-        <meta name= "viewport" content= "width:device-width, initial-scale=1.0">
-        <link rel= "icon" href= "#" type= "image/x-icon">
-        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css">
-        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel= "stylesheet" type= "text/css" href= "css/main.css">
-        <link rel= "stylesheet" type= "text/css" href= "css/responsive.css">
-        <base target= "_self">
+        <title>FlagshipWorld | Home</title>
+        <meta charset= "UTF-8"/>
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge"/>
+        <meta name= "description" content= "Flagship Smartphone Specs"/>
+        <meta name= "viewport" content= "width:device-width, initial-scale=1.0"/>
+        <link rel= "icon" href= "images/flagship.jpg" type= "image/x-icon"/>
+        <link rel= "stylesheet" type= "text/css" href= "styling/bootstrap/bootstrap.min.css"/>
+        <link rel= "stylesheet" href= "styling/plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel= "stylesheet" type= "text/css" href= "css/main.css"/>
+        <link rel= "stylesheet" type= "text/css" href= "css/responsive.css"/>
+        <base target= "_self"/>
+        <script src= "js/jquery-3.3.1.min.js"></script>
+        <script src= "styling/bootstrap/popper.js"></script>
+        <script src= "styling/bootstrap/bootstrap.js"></script>
+        <script src= "styling/bootstrap/bootstrap.min.js"></script>
+        <script src= "js/myScript.js"></script>
+        <script>
+            $(function(){
+                $(".control").css("border-radius", "8px");
+            });
+        </script>
     </head>
     <body>
         <div id= "cover-header">
@@ -21,6 +31,7 @@
                 </div>
             </header>
         </div>
+        <!-- nav -->
         <nav class= "navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-dark bg-dark">
             <a class= "navbar-brand text-white" href= "index.html">Flagship World</a>
             <button class= "navbar-toggler navbar-toggler-right" type= "button" data-toggle= "collapse" data-target= "#navToggle" aria-controls= "navToggle" aria-expanded= "false" aria-label= "Toggle navigation">
@@ -53,82 +64,140 @@
                 </ul>
             </div>
         </nav>
-        <br>
-        <div class= "container">
+        <div class= "container-fluid">
             <div class= "row">
-                <!-- first phone -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Apple iPhone X</h4>
-                            </div>
-                            <img class= "card-img-top" src= "images/iPX.jpg" alt= "apple iphone x">
-                            <p class= "card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi inventore quo minus esse voluptatum.</p>
-                            <a href= "specs.html" class= "btn btn-outline-secondary m-1">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- next phone -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Google Pixel 3 XL</h4>
-                            </div>
-                            <img class= "card-img-top" src= "images/iPX.jpg" alt= "an image of a bridge in a forest">
-                            <p class= "card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi inventore quo minus esse voluptatum.</p>
-                            <a href= "specs.html" class= "btn btn-outline-secondary m-1">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ads -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Ads</h4>
-                            </div>
-                            <p class= "card-text p-2">Advertise your brand here, get it out to the world!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- next phone -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Samsung Galaxy S10</h4>
-                            </div>
-                            <img class= "card-img-top" src= "images/iPX.jpg" alt= "samsung galaxy s10">
-                            <p class= "card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi inventore quo minus esse voluptatum.</p>
-                            <a href= "specs.html" class= "btn btn-outline-secondary m-1">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- next phone -->
-                <div class= "col-md-4">
-                    <div class= "card" style= "max-width:25rem">
-                        <div class= "card-block">
-                            <div class= "card-header">
-                                <h4 class= "text-center">Xiaomi Mi 9</h4>
-                            </div>
-                            <img class= "card-img-top" src= "images/iPX.jpg" alt= "an image of a bridge in a forest">
-                            <p class= "card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi inventore quo minus esse voluptatum.</p>
-                            <a href= "specs.html" class= "btn btn-outline-secondary m-1">Read More</a>
-                        </div>
+                <div class= "col-md-12">
+                    <div class="card">
+                        <div class= "card-body text-center mb-2">Ad</div>
                     </div>
                 </div>
             </div>
-            <p>Visit the <a href= "specs.html">Specs</a> page to see more on various brands.</p>
+            <div class= "row content">
+                <div class= "col-sm-2 sidenav">
+                    <div id= "slider" class= "carousel slide" data-ride= "carousel">
+                        <div class= "card" id= "indexCarousel">
+                            <div class= "card-body">
+                                <div class= "carousel-inner" role= "listbox">
+                                    <div id= "carouText1" class= "carousel-item active"></div>
+                                    <div id= "carouText2" class= "carousel-item"></div>
+                                    <div id= "carouText3" class= "carousel-item"></div>
+                                </div>
+                            </div>
+                            <div class= "card-footer text-center">
+                                <a href= "news.html" class= "btn btn-sm btn-outline-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <a href= "#slider" class= "carousel-control-prev" data-slide= "prev">
+                            <span class= "carousel-control-prev-icon bg-dark control"></span>
+                        </a>
+                        <a href= "#slider" class= "carousel-control-next" data-slide= "next">
+                            <span class= "carousel-control-next-icon bg-dark control"></span>
+                        </a>
+                    </div>
+                    <!-- IPHONE 11 VIDEO SHOULD BE EMBEDED HERE -->
+                    <div class= "embed-responsive embed-responsive-16by9">
+                        <iframe src= "https://youtu.be/OvVKnC6gGtg" allowfullscreen frameborder= "0" class= "embed-responsive-item"></iframe>
+                    </div>
+                </div>
+                <div class= "col-sm-8">
+                    <!-- main content -->
+                    <div class= "row">
+                        <!-- first phone -->
+                        <div class="col-md-4">
+                            <div class= "card" style= "max-width:25rem">
+                                <div class= "card-block">
+                                    <div class= "card-header">
+                                        <h4 class= "text-center">Apple iPhone 11 Pro</h4>
+                                    </div>
+                                    <img class= "card-img-top" src= "images/iPX.jpg" alt= "apple iphone x"/>
+                                    <div class= "card-body">
+                                        <p class= "card-text">Apple's latest mobile launch, released on the 10th of September 2019.
+                                            The phone comes with a 5.80-inch touchscreen display with a resolution of 1125 pixels by
+                                            2436 pixels at a 458 PPI (pixels per inch).
+                                        </p>
+                                    </div>
+                                    <div class= "card-footer text-right">
+                                        <a href= "specs.html" class= "btn btn-sm btn-outline-secondary m-1">More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- next phone -->
+                        <div class="col-md-4">
+                            <div class= "card" style= "max-width:25rem">
+                                <div class= "card-block">
+                                    <div class= "card-header">
+                                        <h4 class= "text-center">Google Pixel 4 XL</h4>
+                                    </div>
+                                    <img class= "card-img-top" src= "images/iPX.jpg" alt= "apple iphone x"/>
+                                    <div class= "card-body">
+                                        <p class= "card-text">Google's latest mobile launch, released on the 15th of October 2019.
+                                            The phone comes with a 6.30-inch touchscreen display with a resolution of 1440 pixels by
+                                            3040 pixels at a 537 PPI (pixels per inch).
+                                        </p>
+                                    </div>
+                                    <div class= "card-footer text-right">
+                                        <a href= "specs.html" class= "btn btn-sm btn-outline-secondary m-1">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class= "card" style= "max-width:25rem">
+                                <div class= "card-block">
+                                    <div class= "card-header">
+                                        <h4 class= "text-center">Samsung Galaxy S10</h4>
+                                    </div>
+                                    <img class= "card-img-top" src= "images/iPX.jpg" alt= "apple iphone x"/>
+                                    <div class= "card-body">
+                                        <p class= "card-text">One of the most outstanding smartphones in Samsung's line of Galaxy S
+                                            series. The phone comes with a 6.10-inch touchscreen display and an aspect ratio of 19.9.
+                                            It is powered by a 1.9GHz octa-core Samsung Exynos 9820 SoC processor, 8GB of RAM, and a
+                                            3400mAh non-removable battery.
+                                        </p>
+                                    </div>
+                                    <div class= "card-footer text-right">
+                                        <a href= "specs.html" class= "btn btn-sm btn-outline-secondary m-1">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- next phone -->
+                        <div class="col-md-4">
+                            <div class= "card" style= "max-width:25rem">
+                                <div class= "card-block">
+                                    <div class= "card-header">
+                                        <h4 class= "text-center">Xiaomi Mi Mix Alpha</h4>
+                                    </div>
+                                    <img class= "card-img-top" src= "images/iPX.jpg" alt= "apple iphone x"/>
+                                    <div class= "card-body">
+                                        <p class= "card-text">The smartphone was launched on the 24th of September 2019, and it comes
+                                            with a 7.92-inch touchscreen display with a resolution of 2088 pixels by 2250 pixels. 
+                                            The phone runs on Android OS, and is powered by a 4050mAh battery.
+                                        </p>
+                                    </div>
+                                    <div class= "card-footer text-right">
+                                        <a href= "specs.html" class= "btn btn-sm btn-outline-secondary m-1">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-sm-2 sidenav">
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ad</div>
+                    </div>
+                    <div class= "card">
+                        <div class= "sideCard card-body text-center">Ad</div>
+                    </div>
+                </div>
+            </div>
+            <p class= "text-center">Visit the <a href= "specs.html">Specs</a> page to see all stats about various brands.</p>
         </div>
         <footer class= "bg-dark d-flex">
 			<ul id= "footerList">
 				<li>
 					<a href= "index.html">Home</a>
-				</li>
-				<li>
-					<a href= "mailto:adegboye72@gmail.com">Email</a>
 				</li>
 				<li>
 					<a href= "http://gsmarena.com">Related</a>
@@ -147,21 +216,21 @@
 				<li>
 					<div class= "d-flex bg-inverse">
 						<div>
-							<a href= "http://twitter.com/danteadon1s">
+							<a href= "https://twitter.com/intent/tweet?screen_name=danteadonis">
 								<i class= "fa fa-twitter pr-lg-2" id= "fa-icons-tw"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://instagram.com/danteadonis">
+							<a href= "https://instagram.com/danteadonis">
 								<i class= "fa fa-instagram pr-lg-2"></i>
 							</a>
 						</div>
 						<div>
-							<a href= "http://gmail.com/adegboye72">
+							<a href= "mailto:adegboye72@gmail.com">
 								<i class= "fa fa-envelope pr-lg-2"></i></a>
 							</div>
 						<div>
-							<a href= "http://facebook.com/danteadegboye">
+							<a href= "https://facebook.com/danteadegboye">
 								<i class= "fa fa-facebook pr-lg-2"></i>
 							</a>
 						</div>
@@ -174,9 +243,5 @@
 				</li>
 			</ul>
 		</footer>
-        <script src= "js/jquery-3.3.1.min.js"></script>
-        <script src= "styling/bootstrap/popper.js"></script>
-        <script src= "styling/bootstrap/bootstrap.js"></script>
-        <script src= "styling/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>
